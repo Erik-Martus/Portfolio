@@ -30,7 +30,7 @@ Think & Create
 ## Resume
 
 ### Education
-- Blackstone Valley Regional Vocational Technical High school
+- Blackstone Valley Regional Vocational Technical High School
 
   65 Pleasant Street, Upton, MA 01568
 
@@ -41,7 +41,7 @@ Think & Create
 
   Interactive Digital Media, Class of 2021
 
-### Application Proficiencies
+### Software Proficiencies
 - **Adobe Creative Suite**
 
     Illustrator CC
@@ -59,8 +59,7 @@ Think & Create
 
 ### Expertise
 - Design and develop static and responsive pages using HTML 5 and CSS 3
-- Design cohesive multimedia campaigns using applications in the Adobe Creative
-  Suite
+- Design cohesive multimedia campaigns using applications in the Adobe Creative Suite
 
 ### Career-Technical Skills
 - Teamwork and collaborative project management
@@ -84,7 +83,7 @@ Think & Create
 
   *Computer Sales Associate* June 2016 to August 2017
   - Interact one-on-one with customers to determine solutions to their computer related needs and issues
-  - Maintain a neat and organized workplace to promote a better customer Experience
+  - Maintain a neat and organized workplace to promote a better customer experience
 
 
 - **Student Ambassador**
