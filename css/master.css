@@ -1,34 +1,105 @@
+/*Custom Fonts*/
+
+@font-face {
+  font-family: "LoraBoldItalic";
+  src: url("../fonts/lora-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/lora-bolditalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LoraBold";
+  src: url("../fonts/lora-bold-webfont.woff2") format("woff2"),
+    url("fonts/lora-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "LoraRegular";
+  src: url("../fonts/lora-regular-webfont.woff2") format("woff2"),
+    url("../fonts/lora-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("../fonts/opensans-italic-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSansSemiBoldItalic";
+  src: url("../fonts/opensans-semibolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-semibolditalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "WorkSansBold";
+  src: url("../fonts/worksans-bold-webfont.woff2") format("woff2"),
+    url("../fonts/worksans-bold-webfont.woff") format("woff");
+}
+
+/*--End Custom Fonts---------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "OpenSansRegular", sans-serif;
 }
 
 header {
   background-color: #262626;
-  color: #FEF;
+  color: #fef;
+  height: 88px;
 }
 
 header h1 {
-  font-family: 'brother-1816', sans-serif;
+  font-family: "brother-1816", "WorkSansBold", sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 1.75rem;
+  font-style: normal;
 }
 
-nav > a:active, a:visited, a:link, a:hover {
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li a {
+  margin: 10px;
+}
+
+nav > a:active,
+a:visited,
+a:link,
+a:hover {
   text-decoration: none;
+  font-family: "brother-1816", "WorkSansBold", sans-serif;
   font-size: 1.5em;
 }
 
-nav a:link, a:visited {
-  color: #FFF;
+nav a:link,
+a:visited {
+  color: #fff;
 }
 
 nav a:hover {
-  color: #CCCCFF;
+  color: #ccccff;
 }
 
 nav ul > :first-child {
@@ -36,11 +107,11 @@ nav ul > :first-child {
 }
 
 nav ul > :nth-child(2) {
-  background-color: #3F3F3F;
+  background-color: #3f3f3f;
 }
 
 nav ul > :nth-child(3) {
-  background-color: #4C4C4C;
+  background-color: #4c4c4c;
 }
 
 nav ul > :nth-child(4) {
