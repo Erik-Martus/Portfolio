@@ -1,4 +1,34 @@
-/*Custom Fonts*/
+/***
+ *    ███████╗ ██████╗ ███╗   ██╗████████╗███████╗
+ *    ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝
+ *    █████╗  ██║   ██║██╔██╗ ██║   ██║   ███████╗
+ *    ██╔══╝  ██║   ██║██║╚██╗██║   ██║   ╚════██║
+ *    ██║     ╚██████╔╝██║ ╚████║   ██║   ███████║
+ *    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+ *                                                
+ */
+
+/*
+Brother 1816 Regular
+
+font-family: brother-1816, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Brother 1816 Bold
+
+font-family: brother-1816, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Brother 1816 ExtraBold
+
+font-family: brother-1816, sans-serif;
+font-weight: 800;
+font-style: normal;
+*/
 
 @font-face {
   font-family: "LoraBoldItalic";
@@ -48,7 +78,15 @@
     url("../fonts/worksans-bold-webfont.woff") format("woff");
 }
 
-/*--End Custom Fonts---------------------------------------*/
+/***
+ *     ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗     
+ *    ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║     
+ *    ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║     
+ *    ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║     
+ *    ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
+ *     ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *                                                               
+ */
 
 * {
   box-sizing: border-box;
@@ -57,26 +95,11 @@
 html {
   font-size: 100%;
   padding-top: 5.5rem;
+  width: 100%;
 }
 
 body {
   font: 1rem/1.5rem "OpenSansRegular", sans-serif;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #262626;
-  color: #fef;
-  height: 5.5rem;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 60;
 }
 
 h1,
@@ -86,17 +109,12 @@ h4,
 h5,
 h6 {
   font-family: "brother-1816", "WorkSansBold", sans-serif;
+  font-style: normal;
   text-transform: uppercase;
 }
 
-img {
-}
-
-header h1 {
-  font-family: "brother-1816", "WorkSansBold", sans-serif;
-  font-weight: 700;
-  font-size: 1.75rem;
-  font-style: normal;
+h1 {
+  font-weight: 800;
 }
 
 a:link,
@@ -113,13 +131,69 @@ a:focus {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/***
+ *    ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ 
+ *    ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+ *    ███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝
+ *    ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
+ *    ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
+ *    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+ *                                                    
+ */
+
+header {
+  background-color: #262626;
+  color: #fef;
+  height: 5.5rem;
+  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 60;
+}
+
+header h1 {
+  font-family: "brother-1816", "WorkSansBold", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-style: normal;
+}
+
 header a#logo {
   display: block;
-  margin: 0.5625rem auto;
+  margin: 0.5625rem 1.5rem;
   width: 5.375rem;
 }
+
+a#hamburger {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+}
+
+span.bar {
+  background-color: #fff;
+  display: block;
+  height: 0.25rem;
+  width: 2.5rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.125rem;
+}
+
+/***
+ *    ███╗   ██╗ █████╗ ██╗   ██╗
+ *    ████╗  ██║██╔══██╗██║   ██║
+ *    ██╔██╗ ██║███████║██║   ██║
+ *    ██║╚██╗██║██╔══██║╚██╗ ██╔╝
+ *    ██║ ╚████║██║  ██║ ╚████╔╝ 
+ *    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+ *                               
+ */
+
 nav ul {
-  font: 700 1.25rem "brother-1816", "WorkSansBold", sans-serif;
+  font: 800 1.25rem "brother-1816", "WorkSansBold", sans-serif;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -128,162 +202,143 @@ nav ul {
   z-index: 40;
 }
 
-nav a:link#home,
-a:visited#home {
-  background-color: #333333;
+/* Is there a more efficient way to organize these? */
+nav a:active,
+nav a:focus,
+nav a:hover,
+nav a:link,
+nav a:visited {
   box-shadow: 0.3125rem 0 0.375rem rgba(0, 0, 0, 25%);
   color: #fef;
   display: block;
-  height: 36.188rem;
+  height: 12.063rem;
+  padding: 5.125rem 0;
   position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
   text-decoration: none;
-  width: 4.375rem;
+  text-align: center;
+  width: 100%;
+}
+
+a:link#home,
+a:visited#home {
+  background-color: #333333;
+  height: 36.188rem;
+  left: 0;
+  padding-top: 2rem;
+  top: 0;
+  width: 20%;
   z-index: 50;
 }
 
-nav a:active#home,
+a:active#home,
 a:focus#home,
 a:hover#home {
   background-color: #344e5c;
-  box-shadow: 0.3125rem 0 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 36.188rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
-  text-decoration: none;
-  width: 4.375rem;
-  z-index: 50;
 }
 
-nav a:link#about,
+a:link#about,
 a:visited#about {
   background-color: #3f3f3f;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-decoration: none;
-  text-align: center;
   top: 0;
-  width: 19.063rem;
   z-index: 40;
 }
 
-nav a:active#about,
+a:active#about,
 a:focus#about,
 a:hover#about {
   background-color: #4ab19d;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-decoration: none;
-  text-align: center;
-  top: 0;
-  width: 19.063rem;
-  z-index: 40;
 }
 
-nav a:link#port,
+a:link#port,
 a:visited#port {
   background-color: #4c4c4c;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
   top: 12.063rem;
-  width: 19.063rem;
   z-index: 20;
 }
 
-nav a:active#port,
+a:active#port,
 a:focus#port,
 a:hover#port {
   background-color: #e17a47;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 12.063rem;
-  width: 19.063rem;
-  z-index: 20;
 }
 
-nav a:link#design_blog,
+a:link#design_blog,
 a:visited#design_blog {
   background-color: #585859;
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
   top: 24.126rem;
-  width: 19.063rem;
   z-index: 10;
 }
 
-nav a:active#design_blog,
+a:active#design_blog,
 a:focus#design_blog,
 a:hover#design_blog {
-  /* background-color: #ef3d59; */
-  box-shadow: 0 0.3125rem 0.375rem rgba(0, 0, 0, 25%);
-  color: #fef;
-  display: block;
-  height: 12.063rem;
-  left: 4.375rem;
-  padding: 5.125rem 0;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  top: 24.126rem;
-  width: 19.063rem;
-  z-index: 10;
+  background-color: #ef3d59;
 }
 
-a#hamburger {
-  display: block;
-  /* width: 5rem; */
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
+/***
+ *    ███████╗██╗     ███████╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗   
+ *    ██╔════╝██║     ██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝   
+ *    █████╗  ██║     █████╗  ██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗   
+ *    ██╔══╝  ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║   
+ *    ███████╗███████╗███████╗██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║▄█╗
+ *    ╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝
+ *                                                                             
+ *     ██████╗██╗      █████╗ ███████╗███████╗███████╗███████╗                 
+ *    ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝                 
+ *    ██║     ██║     ███████║███████╗███████╗█████╗  ███████╗                 
+ *    ██║     ██║     ██╔══██║╚════██║╚════██║██╔══╝  ╚════██║                 
+ *    ╚██████╗███████╗██║  ██║███████║███████║███████╗███████║▄█╗              
+ *     ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚══════╝╚═╝              
+ *                                                                             
+ *    ██╗██████╗ ███████╗                                                      
+ *    ██║██╔══██╗██╔════╝                                                      
+ *    ██║██║  ██║███████╗                                                      
+ *    ██║██║  ██║╚════██║                                                      
+ *    ██║██████╔╝███████║                                                      
+ *    ╚═╝╚═════╝ ╚══════╝                                                      
+ *                                                                             
+ */
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
-span.bar {
-  background-color: #fff;
-  display: block;
-  height: 0.25rem;
-  width: 3rem;
-  margin-bottom: 0.4rem;
-  border-radius: 0.125rem;
+figcaption {
+  margin: 1.5rem;
+}
+
+figcaption h1 {
+  line-height: 2.25rem;
+  width: 10rem;
+}
+
+figcaption h2 {
+  font: italic 1.15rem/1.5rem "LoraRegular", serif;
+  text-transform: none;
 }
 
 figure.portrait figcaption {
   position: absolute;
   bottom: 2rem;
+}
+
+a.button:active,
+a.button:focus,
+a.button:hover,
+a.button:link,
+a.button:visited {
+  color: #fef;
+  text-decoration: none;
+}
+
+a.button:link,
+a.button:visited {
+  background-color: #4ab19d;
+}
+
+a.button:active,
+a.button:focus,
+a.button:hover {
+  background-color: #344e5c;
 }
