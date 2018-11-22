@@ -5,7 +5,7 @@
  *    ██╔══╝  ██║   ██║██║╚██╗██║   ██║   ╚════██║
  *    ██║     ╚██████╔╝██║ ╚████║   ██║   ███████║
  *    ╚═╝      ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝
- *                                                
+ *
  */
 
 /*
@@ -79,13 +79,13 @@ font-style: normal;
 }
 
 /***
- *     ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗     
- *    ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║     
- *    ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║     
- *    ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║     
+ *     ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗
+ *    ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║
+ *    ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║
+ *    ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║
  *    ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
  *     ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
- *                                                               
+ *
  */
 
 * {
@@ -102,6 +102,16 @@ body {
   font: 1rem/1.5rem "OpenSansRegular", sans-serif;
 }
 
+footer,
+main {
+  padding: 0 1.5rem;
+}
+
+footer {
+  background-color: #333;
+  height: ;
+}
+
 h1,
 h2,
 h3,
@@ -113,8 +123,8 @@ h6 {
   text-transform: uppercase;
 }
 
-h1 {
-  font-weight: 800;
+p {
+  margin: 0 0 0.75rem;
 }
 
 a:link,
@@ -133,13 +143,13 @@ a:focus {
 }
 
 /***
- *    ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ 
+ *    ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗
  *    ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
  *    ███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝
  *    ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
  *    ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
  *    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
- *                                                    
+ *
  */
 
 header {
@@ -187,9 +197,9 @@ span.bar {
  *    ████╗  ██║██╔══██╗██║   ██║
  *    ██╔██╗ ██║███████║██║   ██║
  *    ██║╚██╗██║██╔══██║╚██╗ ██╔╝
- *    ██║ ╚████║██║  ██║ ╚████╔╝ 
- *    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
- *                               
+ *    ██║ ╚████║██║  ██║ ╚████╔╝
+ *    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝
+ *
  */
 
 nav ul {
@@ -208,7 +218,7 @@ nav a:focus,
 nav a:hover,
 nav a:link,
 nav a:visited {
-  box-shadow: 0.3125rem 0 0.375rem rgba(0, 0, 0, 25%);
+  box-shadow: 0 0 0.375rem rgba(0, 0, 0, 25%);
   color: #fef;
   display: block;
   height: 12.063rem;
@@ -276,28 +286,79 @@ a:hover#design_blog {
 }
 
 /***
- *    ███████╗██╗     ███████╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗   
- *    ██╔════╝██║     ██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝   
- *    █████╗  ██║     █████╗  ██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗   
- *    ██╔══╝  ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║   
+ *
+ *    ███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗
+ *    ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+ *    █████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝
+ *    ██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗
+ *    ██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║
+ *    ╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
+ *
+ */
+
+footer {
+  background-color: #333;
+  color: #585859;
+  font-size: 0.75rem;
+  height: 3rem;
+  padding: 0.75rem 0.5rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/***
+ *    ███████╗██╗     ███████╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗
+ *    ██╔════╝██║     ██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+ *    █████╗  ██║     █████╗  ██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+ *    ██╔══╝  ██║     ██╔══╝  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
  *    ███████╗███████╗███████╗██║ ╚═╝ ██║███████╗██║ ╚████║   ██║   ███████║▄█╗
  *    ╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝
- *                                                                             
- *     ██████╗██╗      █████╗ ███████╗███████╗███████╗███████╗                 
- *    ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝                 
- *    ██║     ██║     ███████║███████╗███████╗█████╗  ███████╗                 
- *    ██║     ██║     ██╔══██║╚════██║╚════██║██╔══╝  ╚════██║                 
- *    ╚██████╗███████╗██║  ██║███████║███████║███████╗███████║▄█╗              
- *     ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚══════╝╚═╝              
- *                                                                             
- *    ██╗██████╗ ███████╗                                                      
- *    ██║██╔══██╗██╔════╝                                                      
- *    ██║██║  ██║███████╗                                                      
- *    ██║██║  ██║╚════██║                                                      
- *    ██║██████╔╝███████║                                                      
- *    ╚═╝╚═════╝ ╚══════╝                                                      
- *                                                                             
+ *
+ *     ██████╗██╗      █████╗ ███████╗███████╗███████╗███████╗
+ *    ██╔════╝██║     ██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝
+ *    ██║     ██║     ███████║███████╗███████╗█████╗  ███████╗
+ *    ██║     ██║     ██╔══██║╚════██║╚════██║██╔══╝  ╚════██║
+ *    ╚██████╗███████╗██║  ██║███████║███████║███████╗███████║▄█╗
+ *     ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚══════╝╚═╝
+ *
+ *    ██╗██████╗ ███████╗
+ *    ██║██╔══██╗██╔════╝
+ *    ██║██║  ██║███████╗
+ *    ██║██║  ██║╚════██║
+ *    ██║██████╔╝███████║
+ *    ╚═╝╚═════╝ ╚══════╝
+ *
  */
+
+a.button:active,
+a.button:focus,
+a.button:hover,
+a.button:link,
+a.button:visited {
+  border-radius: 2.5rem;
+  box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(50, 50, 50, 12%);
+  color: #fef;
+  display: inline-block;
+  font-family: "OpenSansSemiBold", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+a.button:link,
+a.button:visited {
+  background-color: #4ab19d;
+}
+
+a.button:active,
+a.button:focus,
+a.button:hover {
+  background-color: #344e5c;
+  box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 12%);
+}
 
 figure {
   margin: 0;
@@ -323,22 +384,91 @@ figure.portrait figcaption {
   bottom: 2rem;
 }
 
-a.button:active,
-a.button:focus,
-a.button:hover,
-a.button:link,
-a.button:visited {
-  color: #fef;
-  text-decoration: none;
+h1 {
+  font: 800 2.75rem/3rem "brother-1816", "WorkSansBold", sans-serif;
+  margin: 1.5rem 0;
 }
 
-a.button:link,
-a.button:visited {
-  background-color: #4ab19d;
+h2 {
+  font: 800 1.75rem/2rem "brother-1816", "WorkSansBold", sans-serif;
+  margin: 0 0 1.125rem;
 }
 
-a.button:active,
-a.button:focus,
-a.button:hover {
-  background-color: #344e5c;
+h3 {
+  font: 700 1.5rem "brother-1816", "WorkSansBold", sans-serif;
+  margin: 0 0 0.75rem;
+}
+
+h4 {
+  font: 700 1rem "brother-1816", "WorkSansBold", sans-serif;
+  margin: 0 0 0.375rem;
+}
+
+li ul {
+  margin-bottom: 0.375rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+span.ai {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 90%;
+}
+
+span.meter {
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem 0.125rem rgba(50, 50, 50, 12%);
+  display: inline-block;
+  height: 1rem;
+  margin-left: 1rem;
+  width: 6rem;
+}
+
+span.ps {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 75%;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 0;
+  vertical-align: baseline;
+  width: 50%;
+}
+
+ul {
+  margin: 0 0 0.75rem;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.resume ul li > ul,
+.jobs ul {
+  list-style-type: initial;
+  padding-left: 1.5rem;
+}
+
+ul.meter_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.software_list {
+  list-style-type: initial;
+  padding-left: 1.5rem;
 }
