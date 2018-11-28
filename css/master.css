@@ -360,6 +360,18 @@ a.button:hover {
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 12%);
 }
 
+a.project_title:link,
+a.project_title:visited {
+  color: #000;
+}
+
+a.project_title:active,
+a.project_title:focus,
+a.project_title:hover {
+  color: #344e5c;
+  text-decoration: none;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -420,6 +432,38 @@ span.ai {
   width: 90%;
 }
 
+span.ae {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 65%;
+}
+
+span.css_3 {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 70%;
+}
+
+span.html_5 {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 70%;
+}
+
+span.in {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 75%;
+}
+
 span.meter {
   background-color: #e0e0e0;
   border-radius: 0.5rem;
@@ -428,6 +472,14 @@ span.meter {
   height: 1rem;
   margin-left: 1rem;
   width: 6rem;
+}
+
+span.maya {
+  background-color: green;
+  border-radius: inherit;
+  display: block;
+  height: inherit;
+  width: 30%;
 }
 
 span.ps {
