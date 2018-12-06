@@ -9,6 +9,8 @@
  */
 
 /*
+Typekit Typefaces
+
 Brother 1816 Regular
 
 font-family: brother-1816, sans-serif;
@@ -353,8 +355,8 @@ a:hover#port {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8f57",endColorstr="#e17a47",GradientType=1);
 }
 
-a:link#design_blog,
-a:visited#design_blog {
+a:link#contact,
+a:visited#contact {
   background: rgb(100, 100, 100);
   background: -moz-linear-gradient(
     135deg,
@@ -376,9 +378,9 @@ a:visited#design_blog {
   z-index: 10;
 }
 
-a:active#design_blog,
-a:focus#design_blog,
-a:hover#design_blog {
+a:active#contact,
+a:focus#contact,
+a:hover#contact {
   background: rgb(247, 99, 123);
   background: -moz-linear-gradient(
     135deg,
@@ -451,7 +453,7 @@ a.button:hover,
 a.button:link,
 a.button:visited {
   background-color: #4ab19d;
-  border-radius: 2.5rem;
+  border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(50, 50, 50, 12%);
   color: #fef;
   display: inline-block;
@@ -502,9 +504,22 @@ figcaption h2 {
   text-transform: none;
 }
 
+figure.portrait {
+  position: relative;
+}
+
 figure.portrait figcaption {
+  bottom: 0.5rem;
+  margin: 0;
   position: absolute;
-  bottom: 2rem;
+}
+
+figcaption a.button:active,
+figcaption a.button:focus,
+figcaption a.button:hover,
+figcaption a.button:link,
+figcaption a.button:visited {
+  margin-bottom: 0;
 }
 
 h1 {
