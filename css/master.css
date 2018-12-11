@@ -127,6 +127,7 @@ h6 {
 
 p {
   margin: 0 0 0.75rem;
+  line-height: 1.6rem;
 }
 
 a:link,
@@ -424,6 +425,61 @@ footer p {
 }
 
 /***
+ *    ███████╗ ██████╗ ██████╗ ███╗   ███╗███████╗
+ *    ██╔════╝██╔═══██╗██╔══██╗████╗ ████║██╔════╝
+ *    █████╗  ██║   ██║██████╔╝██╔████╔██║███████╗
+ *    ██╔══╝  ██║   ██║██╔══██╗██║╚██╔╝██║╚════██║
+ *    ██║     ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████║
+ *    ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+ *
+ */
+
+form {
+  position: relative;
+}
+
+input[type=submit] {
+  border: none;
+  left: 1.5rem;
+  margin-bottom: 3rem;
+  outline: none;
+  padding: .5rem;
+  position: relative;
+}
+
+
+
+input[type=text],
+textarea {
+  border: none;
+  border-bottom: 1px solid #B6B6B6;
+  margin-bottom: 1.5rem;
+  outline: none;
+  padding: .5rem;
+  width: 100%;
+  resize: none;
+}
+
+input[type=text]:hover,
+input[type=text]:focus,
+textarea:hover,
+textarea:focus {
+  background-color: #FAFAFA;
+  border-bottom: 2px solid #A6A6A6;
+  position: relative;
+}
+
+::placeholder {
+  color: #C7C7C7;
+}
+
+:hover::placeholder,
+:focus::placeholder {
+  color: #B6B6B6;
+  text-shadow: 0 2px 5px #FAFAFA;
+}
+
+/***
  *    ███████╗██╗     ███████╗███╗   ███╗███████╗███╗   ██╗████████╗███████╗
  *    ██╔════╝██║     ██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
  *    █████╗  ██║     █████╗  ██╔████╔██║█████╗  ██╔██╗ ██║   ██║   ███████╗
@@ -451,7 +507,8 @@ a.button:active,
 a.button:focus,
 a.button:hover,
 a.button:link,
-a.button:visited {
+a.button:visited,
+input[type=submit] {
   background-color: #4ab19d;
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(50, 50, 50, 12%);
@@ -468,7 +525,9 @@ a.button:visited {
 
 a.button:active,
 a.button:focus,
-a.button:hover {
+a.button:hover,
+input[type=submit]:focus,
+input[type=submit]:hover {
   background-color: #344e5c;
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 12%);
 }
@@ -495,8 +554,7 @@ figcaption {
 }
 
 figcaption h1 {
-  line-height: 2.25rem;
-  width: 10rem;
+  line-height: 3.25rem;
 }
 
 figcaption h2 {
