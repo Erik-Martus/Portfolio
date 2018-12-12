@@ -33,18 +33,6 @@ font-style: normal;
 */
 
 @font-face {
-  font-family: "LoraBoldItalic";
-  src: url("../fonts/lora-bolditalic-webfont.woff2") format("woff2"),
-    url("../fonts/lora-bolditalic-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "LoraBold";
-  src: url("../fonts/lora-bold-webfont.woff2") format("woff2"),
-    url("fonts/lora-bold-webfont.woff") format("woff");
-}
-
-@font-face {
   font-family: "LoraRegular";
   src: url("../fonts/lora-regular-webfont.woff2") format("woff2"),
     url("../fonts/lora-regular-webfont.woff") format("woff");
@@ -60,18 +48,6 @@ font-style: normal;
   font-family: "OpenSansRegular";
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
     url("../fonts/opensans-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "OpenSansSemiBoldItalic";
-  src: url("../fonts/opensans-semibolditalic-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-semibolditalic-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "OpenSansSemiBold";
-  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-semibold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -111,7 +87,6 @@ main {
 
 footer {
   background-color: #333;
-  height: ;
 }
 
 h1,
@@ -123,6 +98,10 @@ h6 {
   font-family: "brother-1816", "WorkSansBold", sans-serif;
   font-style: normal;
   text-transform: uppercase;
+}
+
+main.full {
+  padding: 0;
 }
 
 p {
@@ -438,45 +417,50 @@ form {
   position: relative;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border: none;
   left: 1.5rem;
   margin-bottom: 3rem;
   outline: none;
-  padding: .5rem;
+  padding: 0.5rem;
   position: relative;
 }
 
+input[name="subject"] {
+  font-weight: bold;
+}
 
-
-input[type=text],
+input[type="text"],
 textarea {
   border: none;
-  border-bottom: 1px solid #B6B6B6;
+  border-bottom: 1px solid #b6b6b6;
+  border-top: 2px solid rgba(0, 0, 0, 0);
   margin-bottom: 1.5rem;
   outline: none;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
   resize: none;
 }
 
-input[type=text]:hover,
-input[type=text]:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
 textarea:hover,
 textarea:focus {
-  background-color: #FAFAFA;
-  border-bottom: 2px solid #A6A6A6;
+  background-color: #fafafa;
+  border-bottom: 2px solid #a6a6a6;
+  border-top: 1px solid rgba(0, 0, 0, 0);
   position: relative;
 }
 
 ::placeholder {
-  color: #C7C7C7;
+  color: #c7c7c7;
+  font-weight: normal;
 }
 
 :hover::placeholder,
 :focus::placeholder {
-  color: #B6B6B6;
-  text-shadow: 0 2px 5px #FAFAFA;
+  color: #b6b6b6;
+  text-shadow: 0 2px 5px #fafafa;
 }
 
 /***
@@ -508,7 +492,7 @@ a.button:focus,
 a.button:hover,
 a.button:link,
 a.button:visited,
-input[type=submit] {
+input[type="submit"] {
   background-color: #4ab19d;
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(50, 50, 50, 12%);
@@ -526,8 +510,8 @@ input[type=submit] {
 a.button:active,
 a.button:focus,
 a.button:hover,
-input[type=submit]:focus,
-input[type=submit]:hover {
+input[type="submit"]:focus,
+input[type="submit"]:hover {
   background-color: #344e5c;
   box-shadow: 0 0.125rem 0.5rem 0.25rem rgba(0, 0, 0, 12%);
 }
@@ -545,16 +529,27 @@ a.project_title:hover {
 }
 
 figure {
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+figure.portrait {
   margin: 0;
   padding: 0;
 }
 
+figure img {
+  max-width: 600px;
+  width: 100%;
+}
+
 figcaption {
-  margin: 1.5rem;
+  font-family: "LoraRegular", serif;
 }
 
 figcaption h1 {
   line-height: 3.25rem;
+  margin-top: 0.5rem;
 }
 
 figcaption h2 {
@@ -562,14 +557,27 @@ figcaption h2 {
   text-transform: none;
 }
 
+figcaption h3 {
+  margin-bottom: 0;
+}
+
 figure.portrait {
   position: relative;
+  height: 37.125rem;
+  overflow: hidden;
 }
 
 figure.portrait figcaption {
   bottom: 0.5rem;
+  color: #fff;
   margin: 0;
+  padding: 0 1.5rem 0.5rem;
   position: absolute;
+}
+
+figure.portrait figcaption h1,
+figure.portrait figcaption h2 {
+  text-shadow: 1px 2px 8px #000;
 }
 
 figcaption a.button:active,
@@ -604,6 +612,10 @@ li ul {
   margin-bottom: 0.375rem;
 }
 
+img.port_img {
+  width: 100%;
+}
+
 section {
   margin-bottom: 1.5rem;
 }
@@ -613,7 +625,7 @@ span.ai {
 }
 
 span.ae {
-  width: 65%;
+  width: 50%;
 }
 
 span.css_3 {
@@ -625,7 +637,11 @@ span.html_5 {
 }
 
 span.in {
-  width: 75%;
+  width: 65%;
+}
+
+span.lr {
+  width: 35%;
 }
 
 span.meter {
@@ -683,6 +699,21 @@ ul {
   margin: 0 0 0.75rem;
 }
 
+ul.meter_list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.software_list {
+  list-style-type: initial;
+  padding-left: 1.5rem;
+}
+
+.full img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
 .resume ul {
   list-style-type: none;
   padding-left: 1rem;
@@ -690,16 +721,6 @@ ul {
 
 .resume ul li > ul,
 .jobs ul {
-  list-style-type: initial;
-  padding-left: 1.5rem;
-}
-
-ul.meter_list {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul.software_list {
   list-style-type: initial;
   padding-left: 1.5rem;
 }
